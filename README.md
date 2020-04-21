@@ -29,6 +29,10 @@ node index.js
 | EMAIL_FROM | Email sender | |
 | EMAIL_TO | Who will receive the e-mail | |
 
+## Extras
+
+E-mail template generated on [beefree.io](https://beefree.io/).
+
 ---
 
 Thank you.
