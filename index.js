@@ -54,7 +54,7 @@ async function sendEmail (feeds) {
     },
     locals: {
       feeds,
-      today: new Date()
+      today: (new Date()).toDateString()
     }
   })
 }

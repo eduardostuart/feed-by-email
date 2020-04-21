@@ -1,4 +1,7 @@
-# 📭 (RSS)Feed By Email
+<p align="center">
+  <img src=".github/image.jpg" width="914" />
+</p>
+
 > just-for-fun™ project.
 
 ## How it works
