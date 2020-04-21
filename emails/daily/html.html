@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <style type="text/css">
+    /* latin */
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOUuhpKKSTjw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  </style>
+</head>
+<body>
+
+  <div style="font-family:'Open Sans';font-size:16px;font-weight:400;padding: 5px;background-color:#fff;">
+    {{#each feeds}}
+      <h3 style="margin:0;padding:0 0 10px 0;font-family:'Open Sans';font-weight: 600;">
+        <a href="{{link}}" style="text-decoration: none;margin:0;padding:0;display:block;color:#000;font-size:24px;">
+          {{title}}
+        </a>
+      </h3>
+      <ul style="margin:10px 0 15px 10px; padding:0;">
+        {{#each items}}
+          <li>
+            <a href="{{link}}" style="font-family:'Open Sans';font-weight:400;text-decoration: none;margin:0;padding:0;display:block;color:#805ad5;font-size:16px;">
+              {{title}}
+            </a>
+          </li>
+        {{/each}}
+      </ul>
+    {{/each}}
+  </div>
+</body>
+</html>
