@@ -59,7 +59,7 @@ async function sendEmail (feeds) {
   })
 }
 
-async function todayFeedItems () {
+async function yesterdayFeedItems () {
   const rssParser = new RSSParser()
 
   const urls = await subscriptionsUrls()
@@ -90,6 +90,6 @@ async function todayFeedItems () {
 }
 
 ;(async () => {
-  const feeds = await todayFeedItems()
+  const feeds = await yesterdayFeedItems()
   await sendEmail(feeds)
 })()
