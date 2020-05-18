@@ -91,5 +91,6 @@ async function yesterdayFeedItems () {
 
 ;(async () => {
   const feeds = await yesterdayFeedItems()
+  console.log(JSON.stringify(feeds, null, 2));
   await sendEmail(feeds)
 })()
