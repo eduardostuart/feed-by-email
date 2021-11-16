@@ -1,3 +1,6 @@
+# Deprecated 
+> Please check: https://github.com/eduardostuart/paperboy 
+--- 
 <p align="center">
   <img src=".github/image.jpg" width="914" />
 </p>
